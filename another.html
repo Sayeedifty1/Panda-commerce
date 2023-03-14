@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        width: 300px;
+        height: 200px;
+        border: 2px solid black;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card"></div>
+    <button id="change-button">Change Border Radius</button>
+    <script>
+      const card = document.getElementById("card");
+
+      document.getElementById("change-button").addEventListener("click", function() {
+        card.style.borderRadius = (parseInt(card.style.borderRadius) + 10) + "px";
+      });
+    </script>
+  </body>
+</html>
